@@ -1,10 +1,11 @@
 {
   "name": "thierryc.github.io",
   "version": "1.0.0",
+  "private": true,
   "description": "",
-  "main": "index.js",
+  "main": "out/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "touch out/.nojekyll && git add out/ && git commit -m \"Deploy to master from source\" && git subtree push --prefix out origin master",
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,5 @@
   "bugs": {
     "url": "https://github.com/thierryc/thierryc.github.io/issues"
   },
-  "homepage": "https://github.com/thierryc/thierryc.github.io#readme"
+  "homepage": "https://thierryc.github.io"
 }
