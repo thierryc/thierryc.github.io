@@ -5,7 +5,7 @@
   "description": "",
   "main": "out/index.html",
   "scripts": {
-    "deploy": "touch out/.nojekyll && git add out/ && git commit -m \"Deploy to master from source\" && git subtree push --prefix out origin master",
+    "deploy": "touch out/.nojekyll && git add out/ && git commit -m \"Deploy to master from source\" && git subtree push --prefix out origin master"
   },
   "repository": {
     "type": "git",
